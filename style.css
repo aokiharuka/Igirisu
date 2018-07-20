@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-size: contain;
+    background-image: url(images/douro.jpeg);
+    background-position: center;
+    background-repeat: repeat-y;
+    color: #fff;
+}
+
+nav {
+    height: 55px;
+    background: #fff;
+}
+
+li {
+    list-style: none;
+    float: right;
+    font-size: 22px;
+}
+
+.nav {
+    line-height: 50px;
+    padding: 0 20px;
+    color: #664b32;
+}
+
+.tizu {
+    float: right;
+    margin-right: 80px;
+    height: 400px;
+    width: 100px:
+}
+
+p {
+    font-size: 26px;
+    font-family: 'Hannotate TC', sans-serif;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: 'Hannotate TC', sans-serif;
+}
+
+#pageTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#pageTop i {
+    padding-top: 6px
+}
+
+#pageTop a {
+    display: block;
+    z-index: 999;
+    padding: 8px 0 0 8px;
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    background-color: #9FD6D2;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#pageTop a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.buckinghan {
+    float: left;
+}
+
+.wimbledon {
+    float: right;
+}
+
+.bigben {
+    float: left;
+}
+
+.Londontou {
+    float: right;
+}
+
+.Londonaiai {
+    float: left;
+}
+
+.museum {
+    float: right;
+}
+
+#gurume {
+    clear: both;
+    overflow: hidden;
+
+}
+
+.food {
+    float: left;
+    margin: 9px;
+    border-radius: 5px;
+}
+
+.mame {
+    float: left;
+    margin: 9px;
+    border-radius: 5px;
+}
+
+.nuri {
+    float: left;
+    margin: 9px;
+    border-radius: 5px;
+}
+
+.tea {
+    float: left;
+    margin: 9px;
+    border-radius: 5px;
+}
+
+#hotel {
+    clear: both;
+}
+
+.ti {
+    color: #4d291e;
+}
+
+.nav {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.nav:hover::after {
+    transform: scale(1, 1);
+}
+
+.spot{
+    width: 100%;
+    height: 500px;
+}
+
+.spot img {
+    float: left;
+}
+
+.spot p {
+    float: left;
+    width: 500px;
+}

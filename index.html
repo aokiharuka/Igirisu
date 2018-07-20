@@ -1,0 +1,172 @@
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>イギリス</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var topBtn = $('#pageTop');
+            topBtn.hide();
+
+            //◇ボタンの表示設定
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 80) {
+
+                    //---- 画面を80pxスクロールしたら、ボタンを表示する
+                    topBtn.fadeIn();
+                } else {
+
+                    //---- 画面が80pxより上なら、ボタンを表示しない
+                    topBtn.fadeOut();
+
+                }
+            });
+            // ◇ボタンをクリックしたら、スクロールして上に戻る
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                auto: true,
+                maxSlides: 3,
+                moveSlides: 1,
+                slideWidth: 1000
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#hotel" class="nav">ホテル</a>
+            </li>
+            <li>
+                <a href="#gurume" class="nav">グルメ</a>
+            </li>
+            <li>
+                <a href="#kankou" class="nav">観光スポット</a>
+            </li>
+            <li>
+                <a href="#igirisu" class="nav">イギリス</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="slider">
+        <div><img src="images/UK_view.jpg" alt="" width="2000" height="1500"></div>
+        <div><img src="images/eihei.jpeg" alt="" width="2000" height="1500"></div>
+        <div><img src="images/Londonai.jpeg" alt="" width="2000" height="1500"></div>
+    </div>
+
+    <div id="igirisu">
+        <h1>イギリス</h1>
+        <img src="images/tizu.jpg" alt="" width="400" class="tizu">
+        <p><br>ヨーロッパ北西部にある立憲君主制の島国で、グレートブリテン島，アイルランド島北東部，および周辺の島々からなっています。
+        <br>イングランド、ウェールズ、スコットランド、北アイルランドの4つの国で構成されています。
+        <br>首都：ロンドン
+        <br>人口：約⒍４５０万人
+        <br>気候：雨が多い
+        <br>時差：ー９時間
+        <br>通貨：ポンド
+        <br>飛行時間（東京〜ロンドン）：約12時間半</p>
+    </div>
+
+    <div id="kankou">
+        <h1>観光スポット</h1>
+        <p class="ti">バッキンガム宮殿</p>
+        <div class="spot">
+            <img src="images/Buckingham palace.jpg" alt="" width="500" height="350" 　class="buckingham">
+            <p>真っ赤な制服と黒い帽子の兵隊さんの衛兵交代を見ることがで きます。
+                <br>女王がスコットランドに滞在する夏の間だけ宮殿が一般公開されます。
+                <br>レンブラント、ルーベンスの絵画や素晴らしい磁器、家具など実際の王宮の豪華な装飾が堪能できます。</p>
+        </div>
+
+        <p class="ti">ウィンブルドン</p>
+        <div class="spot">
+            <img src="images/wimbledon.jpg" alt="" width="500" height="350" class="wimbledon">
+            <p>テニスの四大大会のうちのひとつのウィンブルドン選手権が開催されることで有名です。
+                <br>その近くにあるウィンブルドン・テニス博物館でテニスの展示も見ることができます。</p>
+        </div>
+
+        <p class="ti">ビックベン</p>
+        <div class="spot"><img src="images/bigben.jpg" alt="" width="500" 　class="bigben" height="350" class="bigben">
+            <p>ロンドンのテムズ川のほとりのウェストミンスター宮殿にある時計台で、正式名称をエリザベスタワーといいます。
+                <br>鐘の鳴る４面時計としてはイギリス最大です。</p>
+        </div>
+
+        <p class="ti">ロンドン塔</p>
+        <div class="spot"><img src="images/Londontou.jpg" alt="" width="500" height="350" class="Londontou">
+            <p>世界文化遺産に登録されているロンドン塔は、位の高い人間を幽閉する監獄として使われたことで有名です。
+                <br>ロンドン塔には世界最大級と言われる「渡りカラス」が伝統的に飼育されています。</p>
+        </div>
+
+        <p class="ti">ロンドンアイ</p>
+        <div class="spot"><img src="images/londonaiai.jpg" alt="" width="500" height="350" class="Londonaiai">
+            <p><br>2008年までは世界最大の観覧車で、ギネスブックにも登録されました。
+                <br>自転車のホイールのような外輪の外側に、ゴンドラがついている特殊な形をしています。</p>
+        </div>
+
+        <p class="ti">大英博物館</p>
+        <div class="spot"><img src="images/museum.JPG" alt="" width="500" height="350" class="museum">
+            <p>世界で最大級の博物館で、世界中の美術品や書籍、考古学的遺物や標本、硬貨や工芸品など約800万点が収蔵されています.
+                <br>ロゼッタストーンやパルテノン神殿の彫刻が飾られています。</p>
+        </div>
+
+    </div>
+
+    <div id="gurume">
+        <h1>グルメ</h1>
+        <div class="food">
+            <p class="ti">フィッシュ&チップス</p>
+            <img src="images/fish&chips.jpg" alt="" width="330" height="300" class="tippusu">
+
+        </div>
+        <div class="mame">
+            <p class="ti">ベイクドビーンズ</p>
+            <img src="images/bakedbeans.jpg" alt="" width="330" height="300" class="omame">
+        </div>
+        <div class="nuri">
+            <p class="ti">マーマイト</p>
+            <img src="images/marmite.jpg" alt="" width="330" height="300" class="mamaite"></div>
+        <div class="tea">
+            <p class="ti">アフタヌーンティー</p>
+            <img src="images/tea.jpeg" alt="" width="330" height="300" class="tii"></div>
+    </div>
+
+    <div id="hotel">
+        <h1>ホテル</h1>
+        <p class="ti">ロンドン マリオット ホテル カウンティ ホール（London Marriott Hotel County Hall） </p>
+        <p>住所： London County Hall, Westminster Bridge Road, ロンドン SE1 7PB 英国</p>
+        <p>電話：+44 20 7928 5200 </p>
+        <p>最寄りのスポット:</p>
+        <p>ロンドン・アイ　0.2 km</p>
+        <p>ビッグ・ベン 0.4 km</p>
+        <p>国会議事堂　0.4 km</p>
+        <p>バッキンガム宮殿　1.5 km</p>
+        <p>タワー・ブリッジ　3.1 km</p>
+        <p class="ti">ロイヤル パーク ホテル ロンドンRoseate House London</p>
+        <p>住所：3 Westbourne Terrace | Lancaster Gate, London W2 3UL, England</p>
+        <p>電話：010 44 20 3917 4617</p>
+        <p>最寄りのスポット：パディントン　0.3km</p>
+    </div>
+
+    <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+
+
+
+</body>
+</html>
